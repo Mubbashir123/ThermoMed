@@ -59,7 +59,7 @@
 
         nav a:hover {
             background-color: #f0f0f0;
-            color: #387ed1; /* Highlight color */
+            color: #387ed1; 
         }
 
         .medicine-list-section {
@@ -107,16 +107,16 @@
         }
 
         .arrow {
-            display: none; /* Initially hidden */
+            display: none;
             color: red;
             font-size: 1.5rem;
         }
 
         .highlighted {
-            background-color: #ffe5e5; /* Optional highlight color */
+            background-color: #ffe5e5; 
         }
 
-        /* Smooth scroll behavior */
+  
         html {
             scroll-behavior: smooth;
         }
@@ -147,11 +147,11 @@
                     <th>ID</th>
                     <th>Medicine Name</th>
                     <th>Threshold Temperature (°C)</th>
-                    <th>Status</th> <!-- Added column for Status -->
+                    <th>Status</th> 
                 </tr>
             </thead>
             <tbody id="medicine-list">
-                <!-- Table rows will be dynamically generated here -->
+          
             </tbody>
         </table>
     </div>
@@ -187,16 +187,16 @@
                 const rows = document.querySelectorAll('#medicine-list tr');
 
                 rows.forEach(row => {
-                    const thresholdCell = row.cells[2]; // Threshold temperature is in the 3rd cell
+                    const thresholdCell = row.cells[2];
                     const threshold = parseFloat(thresholdCell.textContent);
                     const arrow = row.querySelector('.arrow');
 
                     if (savedTemperature > threshold) {
-                        arrow.style.display = 'inline'; // Show the arrow if temperature exceeds threshold
-                        row.classList.add('highlighted'); // Optional: highlight the row
+                        arrow.style.display = 'inline'; 
+                        row.classList.add('highlighted');
                     } else {
-                        arrow.style.display = 'none'; // Hide the arrow if temperature is below threshold
-                        row.classList.remove('highlighted'); // Optional: remove highlight
+                        arrow.style.display = 'none';
+                        row.classList.remove('highlighted'); 
                     }
                 });
             }
