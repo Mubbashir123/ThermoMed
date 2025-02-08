@@ -1,0 +1,92 @@
+[
+    {
+      "medicine_id": 1,
+      "medicine_name": "Paracetamol",
+      "threshold_temperature_celsius": 25,
+      "side_effects": ["Nausea", "Rash", "Liver Damage"],
+      "storage_conditions": "Store below 25°C, away from moisture",
+      "expiry": "3 Years",
+      "precautions": ["Avoid alcohol", "Do not overdose"]
+    },
+    {
+      "medicine_id": 2,
+      "medicine_name": "Aspirin",
+      "threshold_temperature_celsius": 30,
+      "side_effects": ["Stomach ulcers", "Bleeding", "Tinnitus"],
+      "storage_conditions": "Store in a cool, dry place",
+      "expiry": "2 Years",
+      "precautions": ["Not for children under 12", "Avoid in pregnancy"]
+    },
+    {
+      "medicine_id": 3,
+      "medicine_name": "Ibuprofen",
+      "threshold_temperature_celsius": 25,
+      "side_effects": ["Heartburn", "Dizziness", "Kidney damage"],
+      "storage_conditions": "Keep at room temperature, away from heat",
+      "expiry": "3 Years",
+      "precautions": ["Take with food", "Avoid prolonged use"]
+    },
+    {
+      "medicine_id": 4,
+      "medicine_name": "Amoxicillin",
+      "threshold_temperature_celsius": 20,
+      "side_effects": ["Nausea", "Rash", "Diarrhea"],
+      "storage_conditions": "Refrigerate if liquid, tablets at room temperature",
+      "expiry": "2 Years",
+      "precautions": ["Complete full course", "Check for allergies"]
+    },
+    {
+      "medicine_id": 5,
+      "medicine_name": "Ciprofloxacin",
+      "threshold_temperature_celsius": 25,
+      "side_effects": ["Nausea", "Dizziness", "Tendon damage"],
+      "storage_conditions": "Store in a cool, dry place",
+      "expiry": "3 Years",
+      "precautions": ["Avoid sun exposure", "Do not take with dairy"]
+    },
+    {
+      "medicine_id": 6,
+      "medicine_name": "Metformin",
+      "threshold_temperature_celsius": 25,
+      "side_effects": ["Nausea", "Bloating", "Lactic acidosis"],
+      "storage_conditions": "Store at room temperature, away from heat",
+      "expiry": "3 Years",
+      "precautions": ["Monitor blood sugar", "Avoid alcohol"]
+    },
+    {
+      "medicine_id": 7,
+      "medicine_name": "Omeprazole",
+      "threshold_temperature_celsius": 30,
+      "side_effects": ["Headache", "Diarrhea", "Vitamin B12 deficiency"],
+      "storage_conditions": "Keep in a cool, dry place",
+      "expiry": "2 Years",
+      "precautions": ["Avoid long-term use", "Take before meals"]
+    },
+    {
+      "medicine_id": 8,
+      "medicine_name": "Lisinopril",
+      "threshold_temperature_celsius": 25,
+      "side_effects": ["Dizziness", "Cough", "Low blood pressure"],
+      "storage_conditions": "Store at room temperature, away from moisture",
+      "expiry": "3 Years",
+      "precautions": ["Avoid potassium supplements", "Monitor blood pressure"]
+    },
+    {
+      "medicine_id": 9,
+      "medicine_name": "Losartan",
+      "threshold_temperature_celsius": 30,
+      "side_effects": ["Dizziness", "Fatigue", "Low blood pressure"],
+      "storage_conditions": "Keep in a dry place at room temperature",
+      "expiry": "3 Years",
+      "precautions": ["Avoid potassium-rich food", "Monitor blood pressure"]
+    },
+    {
+      "medicine_id": 10,
+      "medicine_name": "Simvastatin",
+      "threshold_temperature_celsius": 25,
+      "side_effects": ["Muscle pain", "Liver issues", "Digestive problems"],
+      "storage_conditions": "Store below 25°C",
+      "expiry": "3 Years",
+      "precautions": ["Take in the evening", "Avoid grapefruit"]
+    }
+]

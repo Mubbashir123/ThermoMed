@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about-us.css">
+    <style>
+        /* Navbar Styling */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            padding: 10px 30px;
+            background-color: #fff;
+            box-shadow: 2px 1px 2px #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+        }
+
+        header .logo span {
+            font-size: 2.5rem;
+            color: #333;
+            margin-left: 10px;
+            font-family: sans-serif;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            padding: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #387ed1;
+        }
+
+        /* Main Content */
+        .container {
+            margin-top: 120px; /* Adjust based on header */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            color: #424242;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .learn-more-btn {
+            background-color: #387ed1;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .learn-more-btn:hover {
+            background-color: #285a99;
+        }
+
+        #moreInfo {
+            display: none;
+            margin-top: 30px;
+        }
+
+        /* Feedback Form */
+        .feedback-form {
+            background: #fff;
+            padding: 20px;
+            max-width: 500px;
+            margin: 30px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .feedback-form h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .feedback-form button {
+            background-color: #387ed1;
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .feedback-form button:hover {
+            background-color: #285a99;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logomed.avif" alt="ThermoMed Logo">
+            <span>ThermoMed</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="medicine-list.html">List of Medicine</a>
+            <a href="laboratory.html" style="padding: 12px; text-decoration: none; color: #333; transition: color 0.3s;" onmouseover="this.style.color='#387ed1'" onmouseout="this.style.color='#333'">LABORATORY</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="content">
+            <h1>About Us</h1>
+            <p>Welcome to ThermoMed! We are committed to revolutionizing the way you manage medicine storage with our AI-driven solutions.</p>
+            <p>Our mission is to ensure that medicines are stored at the right temperature and conditions to maintain their efficacy.</p>
+            <p>Want to know more about our journey and how we innovate? Click below!</p>
+            <button class="learn-more-btn" id="learnMoreBtn">Learn More</button>
+        </section>
+
+        <section id="moreInfo">
+            <h2>Our Journey</h2>
+            <p>Since our inception, we have grown tremendously, thanks to the support of our customers and the dedication of our team.</p>
+            <h2>What Makes Us Unique</h2>
+            <p>We bring cutting-edge technology, AI-based monitoring, and user-friendly interfaces to ensure the best healthcare experience.</p>
+        </section>
+
+        <!-- Feedback Form -->
+        <section class="feedback-form">
+            <h2>We Value Your Feedback</h2>
+            <p>Your insights help us improve. Please share your thoughts below:</p>
+            <form id="feedbackForm" action="" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Feedback Received">
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" rows="4" placeholder="Your Feedback" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="feedbackMessage" style="color: green; display: none;">Thank you for your feedback!</p>
+        </section>
+        
+
+        <footer>
+            <p>&copy; 2024 ThermoMed. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Toggle Learn More Section
+        document.getElementById('learnMoreBtn').addEventListener('click', function() {
+            const moreInfo = document.getElementById('moreInfo');
+            moreInfo.style.display = (moreInfo.style.display === 'none' || moreInfo.style.display === '') ? 'block' : 'none';
+        });
+
+        // Feedback Form Submission
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('feedbackMessage').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('feedbackMessage').style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
