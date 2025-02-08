@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="about-us.css">
     <style>
-        /* Navbar Styling */
+       
         body {
             font-family: sans-serif;
             margin: 0;
@@ -66,9 +66,9 @@
             color: #387ed1;
         }
 
-        /* Main Content */
+    
         .container {
-            margin-top: 120px; /* Adjust based on header */
+            margin-top: 120px; 
             text-align: center;
             padding: 20px;
         }
@@ -105,7 +105,7 @@
             margin-top: 30px;
         }
 
-        /* Feedback Form */
+      
         .feedback-form {
             background: #fff;
             padding: 20px;
@@ -145,7 +145,7 @@
             background-color: #285a99;
         }
 
-        /* Footer */
+        
         footer {
             background-color: #f0f0f0;
             padding: 10px;
@@ -185,7 +185,6 @@
             <p>We bring cutting-edge technology, AI-based monitoring, and user-friendly interfaces to ensure the best healthcare experience.</p>
         </section>
 
-        <!-- Feedback Form -->
         <section class="feedback-form">
             <h2>We Value Your Feedback</h2>
             <p>Your insights help us improve. Please share your thoughts below:</p>
@@ -209,13 +208,13 @@
     </div>
 
     <script>
-        // Toggle Learn More Section
+     
         document.getElementById('learnMoreBtn').addEventListener('click', function() {
             const moreInfo = document.getElementById('moreInfo');
             moreInfo.style.display = (moreInfo.style.display === 'none' || moreInfo.style.display === '') ? 'block' : 'none';
         });
 
-        // Feedback Form Submission
+        
         document.getElementById('feedbackForm').addEventListener('submit', function(event) {
             event.preventDefault();
             document.getElementById('feedbackMessage').style.display = 'block';
