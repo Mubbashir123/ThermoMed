@@ -21,12 +21,13 @@ ThermoMed is an intelligent medicine storage assistant designed to help users mo
 ✅ Responsive & Mobile-Friendly – Works seamlessly across desktop, tablet, and mobile devices for easy access anytime, anywhere.
 
 🛠️ Tech Stack
+
 Frontend: HTML, CSS, JavaScript
 Database: JSON for local data storage
 API Integration: EmailJS for email notifications
 AI Chatbot: Integrated with an AI system for medical guidance
 📸 Screenshots
-🔹 [Insert screenshots of the interface and chatbot here]
+🔹 <img width="1266" alt="Screenshot 2025-02-09 010430" src="https://github.com/user-attachments/assets/37396618-aad4-4aa6-bcc3-5b62bfb5b1d8" />
 
 📥 Installation & Setup
 🔹 Clone the Repository
